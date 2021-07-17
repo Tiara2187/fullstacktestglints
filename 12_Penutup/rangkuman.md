@@ -1,0 +1,8 @@
+# Rangkuman
+1. Apakah anda mengalami kendala saat pengerjaan test ini? Jika ada, bisa anda ceritakan, soal apa saja? iya, kesulitan yang saya alami waktu sliceing frontend dan membuat design pada tampilan, sebelumnya terjadi kendala waktu melakukan routing pada tampilan. Selain itu juga karna soalnya yang diberikan lumayan banyak dan waktunya juga lumayan singkat.
+
+2. Jika anda mengalami kendala sehingga tidak dapat menyelesaikan soal-soal yang diberikan (atau tidak terealisasi untuk menyelesaikannya, karena faktor waktu dan lainnya), apa ide/konsep yang terpikirkan oleh anda agar soal-soal tersebut dapat diselesaikan? Menurut saya perlu adanya manajemen waktu dalam mengerjakan seperti mungkin menggunakan bantuan software jira dan memilih mana yang harus dikerjakan duluan yang kemudian di buat tiket di JIra sehingga kita tahu hari ini ada plan buat mengerjakan tugas yang mana dulu, sehingga dapat terselesaikan dan menjadi lebih disiplin dan teratur dalam memanajem waktu pengerjaan. Selain itu juga perlu membuat catatan jika ada sesuatu yang stuck saat mengerjakan bisa diulik kembali untuk mengingat agar tidak lupa. 
+
+3. Apakah selama mengerjakan soal-soal test ini, anda dibantu oleh orang lain? tidak, saya mengerjakan sendiri
+
+4. Apakah selama mengerjakan soal-soal test ini, anda menggunakan referensi kode program yang dibuat oleh orang lain di Internet? iya, saya menggunakan referensi dari internet dan module dari Bootcamp Salt Academy yang sebelumnya sudah diberikan oleh Tutor

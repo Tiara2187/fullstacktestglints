@@ -1,0 +1,462 @@
+{
+	"info": {
+		"_postman_id": "799c7af9-a51e-47a6-a6f7-1a101a8a4154",
+		"name": "Test-Glints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "tiaramuttianingtyas",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "tiara123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tiaramuttianingtyas23@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1000/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "tiaramuttianingtyas23@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "tiara123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1000/users/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"users",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listperusahaan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYwM2IyOThhNGNlNTc0ODBmM2RiZTciLCJpYXQiOjE2MjYzNjIyMTZ9.HnkmpiCOgmSDeJsHIpFi6-TNEtT7gux4PkNo8DZrRrI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1000/perusahaan/listperusahaan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"perusahaan",
+						"listperusahaan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postperusahaan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYwM2IyOThhNGNlNTc0ODBmM2RiZTciLCJpYXQiOjE2MjYzNjIyMTZ9.HnkmpiCOgmSDeJsHIpFi6-TNEtT7gux4PkNo8DZrRrI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Solusi Pratama",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Jalan Raya DUkuh",
+							"type": "text"
+						},
+						{
+							"key": "telepon",
+							"value": "021-293849",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1000/perusahaan/createperusahaan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"perusahaan",
+						"createperusahaan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getperusahaanid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYwM2IyOThhNGNlNTc0ODBmM2RiZTciLCJpYXQiOjE2MjYzNjIyMTZ9.HnkmpiCOgmSDeJsHIpFi6-TNEtT7gux4PkNo8DZrRrI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1000/perusahaan/getperusahaanid/60f057387b9d8d49643c95f1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"perusahaan",
+						"getperusahaanid",
+						"60f057387b9d8d49643c95f1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateperusahaan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYwM2IyOThhNGNlNTc0ODBmM2RiZTciLCJpYXQiOjE2MjYzNjIyMTZ9.HnkmpiCOgmSDeJsHIpFi6-TNEtT7gux4PkNo8DZrRrI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Jaringan Solusindo",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Simpang 7",
+							"type": "text"
+						},
+						{
+							"key": "telepon",
+							"value": "021-869583",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1000/perusahaan/updatedperusahaan/60f057387b9d8d49643c95f1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"perusahaan",
+						"updatedperusahaan",
+						"60f057387b9d8d49643c95f1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getmobil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYwM2IyOThhNGNlNTc0ODBmM2RiZTciLCJpYXQiOjE2MjY0MDQxNDN9.MYudESRUUKJhixH2thWqfaKCP4_vk2kIA-oLI5ga8q8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1000/mobil/listmobil",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"mobil",
+						"listmobil"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postmobil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYwM2IyOThhNGNlNTc0ODBmM2RiZTciLCJpYXQiOjE2MjY0MDQxNDN9.MYudESRUUKJhixH2thWqfaKCP4_vk2kIA-oLI5ga8q8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Wuling Formo",
+							"type": "text"
+						},
+						{
+							"key": "merk",
+							"value": "Wuling",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "100000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1000/mobil/createmobil",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"mobil",
+						"createmobil"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putmobil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYwM2IyOThhNGNlNTc0ODBmM2RiZTciLCJpYXQiOjE2MjY0MDQxNDN9.MYudESRUUKJhixH2thWqfaKCP4_vk2kIA-oLI5ga8q8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "wuling formo",
+							"type": "text"
+						},
+						{
+							"key": "merk",
+							"value": "Wuling",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "105000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:1000/mobil/updatemobil/60f0fef8347c914dec71797e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"mobil",
+						"updatemobil",
+						"60f0fef8347c914dec71797e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletemobil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYwM2IyOThhNGNlNTc0ODBmM2RiZTciLCJpYXQiOjE2MjY0MDQxNDN9.MYudESRUUKJhixH2thWqfaKCP4_vk2kIA-oLI5ga8q8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1000/mobil/deletemobil/60f0fef8347c914dec71797e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"mobil",
+						"deletemobil",
+						"60f0fef8347c914dec71797e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getkaryawan",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGYwM2IyOThhNGNlNTc0ODBmM2RiZTciLCJpYXQiOjE2MjY0MDQxNDN9.MYudESRUUKJhixH2thWqfaKCP4_vk2kIA-oLI5ga8q8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1000/karyawan/listkaryawan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"karyawan",
+						"listkaryawan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postkaryawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:1000/karyawan/createkaryawan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"karyawan",
+						"createkaryawan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

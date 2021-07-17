@@ -1,0 +1,38 @@
+Schema Database
+
+User - karyawan
+	 - perusahaan
+	 - mobil
+field Schema
+- User : id : integer
+		 username : string
+		 password: string
+		 email: string
+		 created_at : datetime
+		 updated_at : datetime
+		 
+- Karyawan : id : integer
+			 ref perusahaan_id : integer
+			 ref mobil_id : integer
+			 nama : string
+			 jeniskelamin : string
+			 tempatlahir : string
+			 tanggallahir : date
+			 alamat : string
+			 telepon : integer
+			 created_at : datetime
+			 updated_at : datetime
+			 
+- Perusahaan : id : integer
+			   nama : string
+			   alamat : string
+			   telepon : integer
+			   created_at : datetime
+			   updated_at : datetime
+			   
+-Mobil : id : integer
+		 nama : string
+		 merk : string
+		 harga : integer
+		 created_at : datetime
+		 updated_at : datetime
